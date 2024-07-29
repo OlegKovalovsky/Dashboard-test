@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Бічна панель -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="./img/setting 1.jpg" alt="Logo">
+                <h1>Dashboard <span class="version">v.01</span></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="menu__item">
+                        <img src="./img/dashboard1.png" alt="Dashboard Icon">
+                        <span>Dashboard</span>
+                        <span class="arrow">></span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./img/Product.png" alt="Product Icon">
+                        <span>Product</span>
+                        <span class="arrow">></span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./img/Customers.png" alt="Customers Icon">
+                        <span>Customers</span>
+                        <span class="arrow">></span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./img/income.png" alt="Income Icon">
+                        <span>Income</span>
+                        <span class="arrow">></span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./img/promote.png" alt="Promote Icon">
+                        <span>Promote</span>
+                        <span class="arrow">></span>
+                    </li>
+                    <li class="menu__item">
+                        <img src="./img/help.png" alt="Help Icon">
+                        <span>Help</span>
+                        <span class="arrow">></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="user__profile">
+                <img src="./img/projectManager.png" alt="User">
+                <div class="user__info">
+                    <h3>Evano</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Вміст сторінки -->
+        <main class="content">
+            <header class="header">
+                <h1><img src="./img/Hello Evano 👋🏼,.png" alt=""></h1>
+            </header>
+            <section class="customers">
+                <div class="customers__header">
+                    <div class="title">
+                        <p class="all__customers">All Customers</p>
+                        <p class="active__members">Active Members</p>
+                    </div>
+                    <div class="search__box">
+                        <img src="./img/search.png" class="search__icon" alt="Search">
+                        <input type="text" placeholder="Search..." name="search">
+                    </div>
+                </div>
+                <!-- Таблиця -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Company</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Cooper</td>
+                            <td>Microsoft</td>
+                            <td>(225) 555-0118</td>
+                            <td>jane@microsoft.com</td>
+                            <td>United States</td>
+                            <td>
+                                <button class="status active">Active</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Floyd Miles</td>
+                            <td>Yahoo</td>
+                            <td>(205) 555-0100</td>
+                            <td>floyd@yahoo.com</td>
+                            <td>Kiribati</td>
+                            <td>
+                                <button class="status inactive">Inactive</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ronald Richards</td>
+                            <td>Adobe</td>
+                            <td>(302) 555-0107</td>
+                            <td>ronald@adobe.com</td>
+                            <td>Israel</td>
+                            <td>
+                                <button class="status inactive">Inactive</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Marvin McKinney</td>
+                            <td>Tesla</td>
+                            <td>(252) 555-0126</td>
+                            <td>marvin@tesla.com</td>
+                            <td>Iran</td>
+                            <td>
+                                <button class="status active">Active</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jerome Bell</td>
+                            <td>Google</td>
+                            <td>(629) 555-0129</td>
+                            <td>jerome@google.com</td>
+                            <td>Réunion</td>
+                            <td>
+                                <button class="status active">Active</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kathryn Murphy</td>
+                            <td>Microsoft</td>
+                            <td>(406) 555-0120</td>
+                            <td>kathryn@microsoft.com</td>
+                            <td>Curaçao</td>
+                            <td>
+                                <button class="status active">Active</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jacob Jones</td>
+                            <td>Yahoo</td>
+                            <td>(206) 555-0112</td>
+                            <td>jacob@yahoo.com</td>
+                            <td>Brazil</td>
+                            <td>
+                                <button class="status active">Active</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kristin Watson</td>
+                            <td>Facebook</td>
+                            <td>(704) 555-0127</td>
+                            <td>kristin@facebook.com</td>
+                            <td>Åland Islands</td>
+                            <td>
+                                <button class="status inactive">Inactive</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <span>Showing data 1 to 8 of 256K entries</span>
+                    <div class="pagination__controls">
+                        <a href="#"> < </a>
+                                <a href="#">1</a>
+                                <a href="#" class="active">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">...</a>
+                                <a href="#">40</a>
+                                <a href="#"> > </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
